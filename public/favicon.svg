@@ -1,4 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#7cd4ff"/>
-  <path d="M20 46V18h8.8c8.5 0 14.2 5.1 14.2 13s-5.7 15-14.2 15H20zm9-8c5.4 0 8.9-3.8 8.9-7s-3.5-7-8.9-7H28v14h1z" fill="#0d0f13"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0057"/>
+      <stop offset="25%" stop-color="#ff7b00"/>
+      <stop offset="50%" stop-color="#ffdd00"/>
+      <stop offset="75%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#8e2eff"/>
+    </linearGradient>
+  </defs>
+  <!-- Fondo circular -->
+  <circle cx="32" cy="32" r="30" fill="url(#grad)" />
+  <!-- Letra M con Space Grotesk -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-size="36" font-family="'Space Grotesk', Arial, sans-serif"
+        font-weight="700" fill="white">
+    M
+  </text>
 </svg>
