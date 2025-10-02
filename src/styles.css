@@ -1,0 +1,36 @@
+:root{
+  --bg:#0d0f13; --card:#141822; --muted:#96a1b3; --fg:#e7ecf3; --acc:#7cd4ff; --acc2:#a7ffcf;
+}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial; background:var(--bg); color:var(--fg); line-height:1.6}
+a{color:var(--acc); text-decoration:none}
+.header{position:sticky; top:0; backdrop-filter:saturate(180%) blur(8px); background:rgba(13,15,19,.6); border-bottom:1px solid #202737; z-index:10}
+.wrap{max-width:1000px; margin:0 auto; padding:0 20px}
+.nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+.brand{font-weight:700; letter-spacing:.3px}
+.menu a{margin-left:18px; font-size:15px}
+.hero{display:grid; grid-template-columns:1.2fr .8fr; gap:28px; padding:72px 0 36px}
+.badge{display:inline-block; padding:6px 10px; border:1px solid #273142; border-radius:999px; color:var(--muted); font-size:13px}
+h1{font-size:40px; line-height:1.15; margin:.6em 0}
+.lead{color:var(--muted); font-size:18px}
+.cta{margin-top:22px; display:flex; gap:12px; flex-wrap:wrap}
+.btn{display:inline-block; padding:12px 16px; border-radius:12px; background:linear-gradient(135deg,var(--acc),var(--acc2)); color:#0a0c10; font-weight:700}
+.btn.ghost{background:transparent; border:1px solid #2a3446; color:#fff}
+.card{background:var(--card); border:1px solid #21283a; border-radius:16px; padding:18px}
+section{padding:42px 0}
+h2{font-size:26px; margin:0 0 14px}
+.grid{display:grid; grid-template-columns:repeat(12,1fr); gap:16px}
+.col-6{grid-column:span 6}
+.col-4{grid-column:span 4}
+.pill{display:inline-block; padding:6px 10px; border:1px solid #273142; border-radius:999px; color:var(--muted); font-size:13px; margin:4px 6px 0 0}
+footer{padding:50px 0; color:#7b8697; font-size:14px; border-top:1px solid #202737; margin-top:30px}
+.xp-item{display:flex; gap:14px; align-items:flex-start}
+.xp-item .time{min-width:110px; color:var(--muted); font-size:14px}
+.sep{border:0;border-top:1px solid #202737}
+@media (max-width: 860px){
+  .hero{grid-template-columns:1fr; padding:42px 0 12px}
+  .grid{grid-template-columns:1fr}
+  .col-6,.col-4{grid-column:1}
+  .menu{display:none}
+}
