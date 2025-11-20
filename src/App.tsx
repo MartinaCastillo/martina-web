@@ -61,7 +61,7 @@ export default function App() {
 
             <div className="cta">
               {/* <a className="mainbtn" ref={btnRef} href="#projects">Ver proyectos</a> */}
-              <a className="btn ghost" href="/public/CV_Martina_Castillo_Roca.pdf" download>Descargar CV</a>
+              <a className="btn ghost" href="/CV_Martina_Castillo_Roca.pdf" download>Descargar CV</a>
               <a className="btn ghost" href="#contact">Escribime</a>
             </div>
             <div className="rainbow-line animate"></div>
