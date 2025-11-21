@@ -30,25 +30,27 @@ const flag = language === "es" ? ARFlag : USFlag;
   return (
     <div>
       <header className="header">
-        <div className="wrap nav">
-          <div>
-            <div className="brand">Martina Castillo</div>
-            <div className="subbrand">@martinac_dev</div>
-          </div>
+  <div className="wrap nav">
+    <div>
+      <div className="brand">Martina Castillo</div>
+      <div className="subbrand">@martinac_dev</div>
+    </div>
 
-          <nav className="menu">
-            <a href="#about">{t.about}</a>
-            <a href="#experience">{t.experience}</a>
-            <a href="#contact">{t.contact}</a>
+    <div className="nav-right">
+      <nav className="menu">
+        <a href="#about">{t.about}</a>
+        <a href="#experience">{t.experience}</a>
+        <a href="#contact">{t.contact}</a>
+      </nav>
 
-            {/* 🌐 Botón idioma */}
-            <button onClick={toggleLanguage} className="language-switch">
-              {flag}
-            </button>
+      {/* 🌐 Botón idioma SIEMPRE visible */}
+      <button onClick={toggleLanguage} className="language-switch">
+        {flag}
+      </button>
+    </div>
+  </div>
+</header>
 
-          </nav>
-        </div>
-      </header>
 
       <main className="wrap">
         <section className="hero">

@@ -209,15 +209,23 @@ footer{padding:50px 0; color:#7b8697; font-size:14px; border-top:1px solid #2027
 }
 
 
-.language-switch {
-   background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
+/* botón de idioma básico */
+.language-switch {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 10px;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  background: none;
+}
+.language-switch svg {
+  display: block;
 }
